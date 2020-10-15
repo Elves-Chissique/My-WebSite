@@ -1,0 +1,291 @@
+/*Resetando os valores de espaçamento */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilizando o bady*/
+body {
+	background: -webkit-radial-gradient(center, circle, #f0f0f0, #74a9ad);
+    background: -moz-radial-gradient(center, circle, #f0f0f0, #74a9ad);
+    background: -ms-radial-gradient(center, circle, #f0f0f0, #74a9ad);
+    background: -o-radial-gradient(center, circle, #f0f0f0, #74a9ad);
+    background: radial-gradient(center, circle, #f0f0f0, #74a9ad);
+    padding:0px 10px;
+}
+
+div#backgroung {
+    background-image: url("../_Imagens/myBackground.png");
+    background-color: rgba(0,0,0,.2);
+    border-right: solid 1px aqua;
+    border-left: solid 1px aqua;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 78%;
+    position: relative;
+    height: 700px;
+	float:left;
+}
+
+/*Estilizando  a div icones*/
+div.icones {
+    width: 20%;
+    height: auto;
+    text-align: left;
+    float: right;
+	margin-left:80%;
+	padding:10px 0px;
+	background-color:rgba(0,0,0,.0);
+	position:fixed;
+	boder-radius:50%;
+}
+
+div.icones img {
+	display:inline-block;
+    width: 75%;
+	padding: 5px 0px;
+}
+
+
+
+/*Estilizando a nav da classe menu */
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,.0);
+    font-family: Arial;
+    font-size: .8em;
+}
+
+.menu input {
+    margin-top: 11px;
+    margin-left: 250Px;
+    width: 210px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    transition: 1s;
+}
+
+.menu input:hover {
+    color: #fff;
+    width: 250px;
+}
+
+
+/*Estilizando as listas */
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0,0,0,.0);
+    color: #fff;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+
+/*Criando o label */
+
+label[for=”bt_menu”] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for=”bt_menu”] {
+    display: none;
+}
+
+/*Estilizando a dive que contem foto principl e o nome da empresa*/
+#SpanTexto {
+    width: 3%;
+    display: block;
+    float: left;
+    margin-left: -15%;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-shadow: aqua 2px 2px 1px;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #222;
+    padding: 4px;
+    transition: all 1s;
+    cursor: pointer;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#SpanTexto:hover {
+    text-shadow: rgb(14, 241, 6) 2px 2px 1px;
+    background-color: #fff;
+    color: black;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    text-align: center;
+    padding: 0% 2%;
+    width: 88%;
+    margin: auto;
+    border-radius: 8px;
+    height: 30px;
+    margin-top: 460px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+span#coyright {
+    font-size: large;
+    display: block;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    margin: auto;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: center;
+    width: 91%;
+}
+
+
+/*Deixando o Menu Responsivo */
+
+@media(max-width: 800px) {
+    label[for=”bt_menu”] {
+        display: block;
+    }
+    body {
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    /*Estilizando a div principal da pagina div Background*/
+    div#backgroung {
+    background-image:url(_Imagens/myBackground.png);
+    border-right: solid 1px aqua;
+    border-left: solid 1px aqua;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    height: 700px;
+     overflow: hidden;
+}
+
+/*Estilizando a div dos icones*/
+div.icones {
+    width:50%;
+    height: auto;
+    text-align: left;
+    margin: auto;
+    padding:10px 0px;
+    background-color:rgba(0,0,0,.0);
+    boder-radius:50%;
+    margin-left:25%;
+}
+
+div.icones img {
+    display:inline-block;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+#Empresa{
+    visibility: hidden;
+}
+
+
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+        background-color: rgb(0,0,0,.4);
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+        background-color: rgb(0,0,0,.4);
+    border-bottom: 1px solid aqua;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    /*Estilizando o titúlo do site*/
+    marquee {
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-top: 50%;
+    }
+    /*Estilizando o background para ficar um pouco escuro*/
+    #backgroundTrnsparente {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}

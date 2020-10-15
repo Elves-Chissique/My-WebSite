@@ -1,0 +1,572 @@
+        /*Resetando os valores de espaçamento */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*Estilizando o bady*/
+    
+    body {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: black;
+        box-sizing: border-box;
+    }
+    
+    div#background {
+        background-color: aqua;
+        border-right: solid 1px aqua;
+        border-left: solid 1px aqua;
+        background-repeat: no-repeat;
+        background-position-y: 42%;
+        background-size: 100%;
+        width: 70%;
+        margin: auto;
+        position: relative;
+        height: auto;
+    }
+    /*Estilizando a nav da classe menu */
+    
+    .menu {
+        width: 100%;
+        height: 50px;
+        background-color: #222;
+        font-family: Arial;
+        font-size: .8em;
+    }
+    
+    .menu input {
+        margin-top: 11px;
+        margin-left: 250Px;
+        width: 210px;
+        height: 25px;
+        border-radius: 10px;
+        text-align: center;
+        color: #000;
+        transition: 1s;
+    }
+    
+    .menu input:hover {
+        color: #fff;
+        width: 250px;
+    }
+    /*Estilizando as listas */
+    
+    .menu ul {
+        list-style: none;
+        position: relative;
+    }
+    
+    .menu ul li {
+        width: 150px;
+        float: left;
+    }
+    
+    .menu a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+    }
+    
+    .menu ul ul {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .menu ul li:hover ul {
+        visibility: visible;
+    }
+    
+    .menu a:hover {
+        background-color: #f4f4f4;
+        color: #555;
+        transition: 0.5s;
+        font-size: 1.2em;
+    }
+    
+    .menu ul ul li {
+        float: none;
+        border-bottom: solid 1px #ccc;
+    }
+    
+    .menu ul ul li a {
+        background-color: #069;
+    }
+    /*Criando o label */
+    
+    label[for=”bt_menu”] {
+        padding: 5px;
+        background-color: #222;
+        color: #fff;
+        font-family: Arial;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        height: 50px;
+    }
+    
+    #bt_menu {
+        display: none;
+    }
+    
+    label[for=”bt_menu”] {
+        display: none;
+    }
+    /*Estilizando div icones*/
+    
+    div.icones {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        text-align: left;
+        float: right;
+        margin-top: 4%;
+        margin-left: 97%;
+        position: absolute;
+    }
+    
+    div.icones img {
+        width: 100%;
+    }
+    
+    div.icones img {
+        width: 100%;
+    }
+    /*Estilização de Marquee*/
+    
+    marquee {
+        color: #000;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-top: 2%;
+        font-size: 22pt;
+        font-variant: small-caps;
+        font-weight: lighter;
+    }
+    /*Estilizando footer*/
+    
+    footer {
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        text-align: center;
+        padding: 0% 2%;
+        width: 88%;
+        margin: auto;
+        border-radius: 8px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    
+    footer img {
+        width: 30px;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+    
+    span#coyright {
+        font-size: large;
+        display: block;
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+        margin: auto;
+        padding: 5px;
+        border-radius: 8px;
+        text-align: center;
+        width: 91%;
+    }
+    /*Estilizando a div resultado que mostrará toda informaçao dos curos*/
+    /* div#resultado {
+        width: 98.8%;
+        height: 300px;
+        color: white;
+        margin: auto;
+        display: none;
+    }*/
+    
+    div#fixed {
+        border: 5px solid #fff;
+        height: unset;
+        width: 100%;
+        display: none;
+        background-color: rgba(0, 0, 0, .7);
+        text-align: right;
+    }
+    
+    #div1 {
+        display: inline-flex;
+        width: 40%;
+        background-color: rgba(33, 34, 34, 0.9);
+        text-align: left;
+        padding: 3%;
+        padding-top: 5%;
+        padding-right: 5%;
+        height: 85%;
+        box-sizing: border-box;
+        float: left;
+        margin-left: 5%;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+        color: #fff;
+        font-variant: small-caps;
+    }
+    
+    input {
+        display: block;
+        margin-top: -20px;
+        margin: auto;
+        background-color: rgba(43, 41, 41, 0.932);
+        color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        transition:all .3s;
+        cursor: pointer;
+    }
+
+    input:hover{
+        border:2px solid aqua;
+    }
+    
+    #separador {
+        height: 15%;
+        margin-top: 25%;
+        display: none;
+    }
+    
+    #div2 {
+        display: inline-flex;
+        width: 38%;
+        background-color: rgba(33, 34, 34, 0.9);
+        text-align: center;
+        padding: 3%;
+        height: 70%;
+        box-sizing: content-box;
+        margin-right: 5%;
+        float: right;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+    
+    #div22 {
+        background-color: rgba(0, 0, 0, .7);
+        height: 385px;
+    }
+    
+    #div2 img {
+        width: 70%;
+        height: auto;
+    }
+    
+    p#x img{
+       width:30px;
+       height:30px;
+       display:block;
+       margin-left:3px;
+    }
+    /*Estilizando o meu album de fotos*/
+    
+    div#cursos{
+        width:80%;
+        border-left:1px solid black;
+        border-right:1px solid black;
+        margin:auto;
+        background-color:#e1d6cc;
+    } 
+    
+    div#cursos p{
+        text-align:center;
+        background-color:rgba(0,0,0,.5);
+        padding: 3px;
+        color:#fff;
+        font-variant:small-caps;
+        font-size:18;
+    }
+    
+    div#cursos span#inf{
+        background-color:rgba(0,0,0,1);
+        display:block;
+        padding:3px;
+        text-align:center;
+        width:80%;
+        margin:auto;
+        margin-top:10px;
+        font-size:19px;
+        font-variant:small-caps;
+        color:#fff;
+        border-radius:15px;
+        
+    }
+    
+    #album {
+        width: 90%;
+        margin: 0% auto;
+        padding: 50px;
+        overflow: hidden;
+        list-style: none;
+    }
+    
+    #album li {
+        float: left;
+        width: 115px;
+        height: 110px;
+        border: 5px solid #fff;
+        margin: 5px;
+        background-color:#cecece;
+        box-sizing: 1px 1px 1px rgba(0, 0, 0, .5);
+        transition:all .2s ease-in;
+    }
+    
+    #album li:hover {
+        transform: scale(1.5);
+    }
+
+    /*Estilizando foto por foto*/
+    #album li#foto-1 {
+        background: url(../_Imagens/servidores.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-1:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-2 {
+        background: url(../_Imagens/servidores2.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-2:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-3 {
+        background: url(../_Imagens/reparar.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-3:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-4 {
+        background: url(../_Imagens/cyber.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    
+    #album li#foto-4:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-5 {
+        background: url(../_Imagens/design.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-5:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-6 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-6:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-7 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-7:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-8 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-8:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-9 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-9:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+    }
+    
+    #album li#foto-10 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    
+    #album li#foto-10:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+      }
+    
+    #album li#foto-11 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+     }
+     
+       #album li#foto-11:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+       }
+   
+
+    #album li#foto-00 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+     }
+     
+       #album li#foto-00:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+       }
+
+    #album li#foto-01 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+     }
+     
+       #album li#foto-01:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+       }
+
+       #album li#foto-12 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+     }
+     
+       #album li#foto-12:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+       }
+
+    #album li#foto-13 {
+        background: url(../_Imagens/.png) no-repeat;
+        background-position: 50% 50%;
+        background-size: 150px 150px;
+        background-color: rgba(0, 0, 0, .4);
+     }
+     
+       #album li#foto-13:hover {
+        background-position: 0px 0px;
+        background-size: 100px 100px;
+       }
+   
+
+   
+
+
+    #album li span {
+        opacity: 0;
+        background-color: rgba(22, 16, 16, 0.3);
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        font-size: 8px;
+        padding: 5px;
+        transition: all .2s;
+    }
+    
+    #album li:hover span {
+        opacity: 1;
+    }
+        /*Deixando o Menu Responsivo */
+        @media(max-width: 800px) {
+            label[for=”bt_menu”] {
+                display: block;
+            }
+            body {
+                background-image: url("../_Imagens/background-2.jpg");
+                background-repeat: repeat;
+                background-size: cover;
+            }
+            #bt_menu:checked~.menu {
+                margin-left: 0;
+            }
+            .menu {
+                margin-top: 5px;
+                margin-left: -100%;
+                transition: all .4s;
+            }
+            .menu ul li {
+                width: 100%;
+                float: none;
+            }
+            .menu ul ul {
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all 4s;
+            }
+            .menu ul li:hover ul {
+                height: auto;
+                max-height: 200px;
+            }
+            /*Estilizando o titúlo do site*/
+            marquee {
+                color: #fff;
+                width: 50%;
+                text-align: center;
+                margin: auto;
+                display: block;
+                margin-top: 50%;
+            }
+            /*Estilizando o background para ficar um pouco escuro*/
+            #backgroundTrnsparente {
+                background-color: rgba(0, 0, 0, .5);
+            }
+        }

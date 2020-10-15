@@ -1,0 +1,326 @@
+/*Resetando os valores de espaçamento */
+ * {
+ margin: 0;
+ padding: 0;
+ }
+
+ /*Estilizando o bady*/
+ body{
+     background-image: url("../_Imagens/background.jpg");
+     background-size:100%;
+     /*background-position-y:center;*/
+     background-repeat: no-repeat;
+     background-color: aquamarine;
+ }
+
+/*Estilizando a nav da classe menu */
+ .menu {
+ width: 100%;
+ height: 50px;
+ background-color: #222;
+ font-family: Arial;
+ font-size: .8em;
+ }
+ .menu input{
+     margin-top: 11px;
+     margin-left:250Px ;
+     width: 210px;
+     height: 25px;
+     border-radius: 10px;
+     text-align:center;
+     color:#000;
+     transition: 1s;
+ }
+
+ .menu input:hover{
+
+     color: #fff;
+     width: 250px;
+ }
+
+/*Estilizando as listas */
+ .menu ul {
+ list-style: none;
+ position: relative;
+ }
+
+.menu ul li {
+ width: 150px;
+ float: left;
+ }
+
+.menu a {
+ padding: 15px;
+ display: block;
+ text-decoration: none;
+ text-align: center;
+ background-color: #222;
+ color: #fff;
+ }
+
+.menu ul ul {
+ position: absolute;
+ visibility: hidden;
+ }
+
+.menu ul li:hover ul {
+ visibility: visible;
+ }
+
+.menu a:hover {
+ background-color: #f4f4f4;
+ color: #555;
+ transition: 0.5s;
+ font-size:1.2em;
+ }
+
+.menu ul ul li {
+ float: none;
+ border-bottom: solid 1px #ccc;
+ }
+
+.menu ul ul li a {
+ background-color: #069;
+ }
+
+/*Criando o label */
+ label[for=”bt_menu”]{
+ padding: 5px;
+ background-color: #222;
+ color: #fff;
+ font-family: Arial;
+ text-align: center;
+ font-size: 30px;
+ cursor: pointer;
+ height: 50px;
+ }
+
+#bt_menu {
+ display: none;
+ }
+
+label[for=”bt_menu”]{
+ display: none;
+ }
+
+ div.icones{
+     width:134px;
+     height:134px;
+     background-color:rgb(14, 130, 224);
+     border-radius: 50%;
+     text-align: left;
+     float:right;
+     margin-top: 1%;
+     margin-left: 83%;
+     position: absolute;
+     
+
+ }
+
+ div.icones img{
+     width:100%;
+ }
+
+ #horas{
+     width: 100px;
+     height: 100px;
+     background-color: rgba(34, 34, 34, 0.5);
+     position: absolute;
+     margin-top: 3%;
+     margin-left: 4%;
+     text-align: center;
+     color:#fff;
+     border-radius:15px;
+     display: none;
+ }
+
+ /*Estilizando o titúlo do site*/
+ marquee{
+    color:#fff;
+    width:50%;
+    text-align: center;
+    margin-left:433px;
+    display: block;
+    margin-top:5%;
+    font-size: 28pt;
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+
+p#introdução{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: springgreen;
+    width:100%;
+    margin: auto;
+    background-color: rgba(100, 100, 100, .5);
+    border-radius:15px;
+}
+#introdução span{
+    color: tomato;
+    font-family: fantasy;
+    font-size:16px;
+    text-shadow: #000 5px 2px 6px;
+}
+
+aside span{
+    color: tomato;
+    font-family: fantasy;
+    font-size:18px;
+    text-shadow: #000 5px 2px 6px;
+}
+
+/*Estilizando Section e Aside*/
+
+/*Section*/
+
+section{
+    clear: both;
+    float: left;
+    margin-top:3%;
+    margin-left:4%;
+    background-color: rgba(100, 100, 100, .6);
+    width: 50%;
+    height:681px;
+}
+
+/*Estilizando h1 de Sectio*/
+section h1{
+    text-align: center;
+    color: #000;
+    background-color:#fff;
+    border-top: 3px solid #000;
+
+}
+
+section img{
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: auto;
+}
+
+
+/*Aside*/
+aside{
+    float: right;
+    margin-top: 3%;
+    margin-right: 4%;
+    background-color: rgba(100, 100, 100, .6);
+    width: 40%;
+}
+/*Estilizando h1 de Aside*/
+aside h1{
+    text-align: center;
+    color: #fff;
+    background-color: #069;
+    border-top: 3px solid #000;
+}
+
+/*Estilizando Img do Aside*/
+aside img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    display: block;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 1s;
+}
+aside img:hover{
+    width: 55%;
+}
+aside img#fundoBranco{
+    background-color: #fff;
+}
+
+
+/*Estilizando paragrafos de Sectio e Aside*/
+section p, aside p{
+    color:springgreen;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: Arial, Helvetica, serif;
+    font-size:large;
+    display: none;
+}
+
+/*Estilizando o footer*/
+#separar{
+    clear: both;
+}
+
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding:0% 2%;
+    width: 88%;
+    margin: auto;
+}
+
+footer img{
+    width:50px;
+    height: auto;
+    padding-left: 10% ;
+    padding-right: 10% ;
+}
+
+footer span{
+    font-size: large;
+}
+
+/*Deixando o Menu Responsivo */
+@media(max-width: 800px) {
+label[for=”bt_menu”] {
+ display: block;
+ }
+ body{
+     background-image:url("../_Imagens/background-2.jpg");
+     background-repeat: repeat;
+     background-size:cover;
+ }
+  
+#bt_menu:checked ~ .menu{
+ margin-left: 0;
+ }
+  
+.menu{
+ margin-top: 5px;
+ margin-left: -100%;
+ transition: all .4s;
+ }
+  
+.menu ul li {
+ width: 100%;
+ float: none;
+ }
+  
+.menu ul ul {
+ position: static;
+ overflow: hidden;
+ max-height: 0;
+ transition: all 4s;
+ }
+  
+.menu ul li:hover ul {
+ height: auto;
+ max-height: 200px;
+ }
+ /*Estilizando o titúlo do site*/
+ marquee{
+    color:#fff;
+    width:50%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-top: 50%;
+}
+/*Estilizando o background para ficar um pouco escuro*/
+#backgroundTrnsparente{
+    background-color: rgba(0, 0, 0,.5);
+}
+  
+ }

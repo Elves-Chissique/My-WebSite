@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resonsivo</title>
+    <link rel="stylesheet" href="../_Css/contactoServ.css">
+</head>
+
+<body>
+    <div id="backgroung">
+        <input type="checkbox" id="bt_menu" />
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_0()"><a href="../MenuDropDown.html">Home</a></li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_1()"><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="web.html">Serviços Web</a></li>
+                        <li><a href="serRedes.html">Serviços Redes</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_2()"><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="programação.html">Programação</a></li>
+                        <li><a href="curRedes.html">Redes Computadores</a></li>
+                        <li><a href="informBasica.html">Informática Basica</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_3()"><a href="multimida.html">Multmídia</a></li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_4()"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="horas">
+
+        </div>
+
+        <div class="icones">
+            <img id="Empresa" src="../_logo/phone.png" alt="Logo da Empresa">
+        </div>
+
+
+        <div id="firstDiv">
+            <p>
+                <Marquee>
+                    Dê nova aparência à sua empresa
+                </Marquee>
+            </p>
+
+        </div>
+
+        <form id="formulario" action="">
+            <fieldset>
+                <legend>Informação Pessoal</legend>
+                <center>
+                    <input required class="detalhes" type="text" name="nameNome" id="idNome" placeholder="Nome Completo">
+                    <input required class="detalhes" type="email" name="nameEmail" id="idEmail" placeholder="Seu Email">
+                    <input required class="detalhes" type="tel" name="nameNumero" id="idNumero" placeholder="Contacto">
+                </center>
+            </fieldset>
+<!-- **************************Fim de um fieldset ************************************* -->
+            <fieldset>
+                <legend>Msg</legend>
+                <center id = 'b'>
+                    <span id="agradec">Agredecemos pelo seu apoio preferêcial ||  We thank you  for your preferêcial help</span>
+                </center>
+                <p id="msg">
+                        <span style="font-size:25px; color:#609;">N</span>erd's <span style="font-size:25px; color:#609;">T</span>echnologies<br/>
+                </p>
+
+            </fieldset>
+<!-- **************************Fim de um fieldset ************************************* -->  
+            <fieldset>
+                <legend>Detalhes da empresa</legend>
+                <center>
+                    <p id="style">Nota: Se já possui um domíno registado</p>
+                    <input id="dominio" type="text" placeholder="Domínio">
+                    <input id="nomeEmpresa" type="text" name="txt" id="txtId" placeholder="Nome da empresa">
+                </center>
+            </fieldset>
+<!-- **************************Fim de um fieldset ************************************* -->
+            <fieldset>
+                <legend>Detalhes do Site</legend>
+                <textarea placeholder="Descreva O tipo de busniss em questão" name="nmetext" id="idText" rows="5"></textarea>
+
+                <select>
+                    <option>Alguma prefêrencia nas as cores?</option>
+                    <option id="sim" value="Sim">Sim</option>
+                    <option id="nao" value="Não">Não</option>
+                </select>
+                <span id ="spanCor">  
+                     <label>
+                        Escolhe  <input type="color" id="cor" >
+                    </label>
+                </span>
+                    <br/>
+                <hr />
+                    <center style="color:#fff; padding:.5%;">
+                        Agendar Uma Reunião para Mais Detalhes
+                    </center>
+                <hr />
+                    <input type="button" id="btnReuniao" Value="Agendar">
+                    <input type="date" class="reuniao"> <input type="time" class="reuniao">  
+                <br>
+            </fieldset>
+
+            <fieldset id="notificacao">
+                <legend>Area de Notificação</legend>
+                <p id="resultado"></p> <b></b>
+                <p id="espacoEmail"> <input placeholder="Escreva Aqui o Enderço" type="text" id="inputEmail" name="email"> </p>
+
+            </fieldset>
+
+            <fieldset id="fieldComIcones">
+                <legend>Notificação</legend>
+                <br>
+                <p style="text-align: center; color:#222; font-size:14px;">Deseja receber nossas novidades?<br/>
+                    Se sim, indique a plataforma, naquale gostaria de receber as novidades
+                </p>
+                <hr/>
+                <footer>
+                    <center>
+                        <img onclick="facebook1()" src="../_Logo/email.png" alt="Icone de Email">
+                        <img onclick="facebook()" src="../_Logo/facebook.png" alt="Icone de facebook">
+                        <img onclick="instagram()" src="../_Logo/instagram.png" alt="Icone de instagram">
+                        <img onclick="instagram()" src="../_Logo/whatsapp.png" alt="Icone de Whatsapp">
+                    </center>
+                </footer>
+                <br>
+            </fieldset>
+        </form>
+    </div>
+<!-- ************************Aqui termina a div Principal *******************************-->
+    <!--Linkando  o JavaScript-->
+    <script src="../_JavaScript/serWeb.js">
+    </script>
+
+</body>
+
+</html>

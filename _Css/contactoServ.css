@@ -1,0 +1,461 @@
+/*Resetando os valores de espaçamento */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilizando o bady*/
+
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #1a1a1b;
+    background-image: url(../_Imagens/mybackground-2.png);
+}
+
+div#backgroung {
+    /*background-image: url("../_Imagens/fundo-3.jpg")*/
+    background-color: aqua;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+
+/*Estilizando a nav da classe menu */
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    font-family: Arial;
+    font-size: .8em;
+}
+
+.menu input {
+    margin-top: 11px;
+    margin-left: 250Px;
+    width: 210px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    transition: 1s;
+}
+
+.menu input:hover {
+    color: #fff;
+    width: 250px;
+}
+
+
+/*Estilizando as listas */
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+
+/*Criando o label */
+
+label[for=”bt_menu”] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for=”bt_menu”] {
+    display: none;
+}
+
+div.icones {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(14, 130, 224);
+    border-radius: 50%;
+    text-align: left;
+    float: right;
+    margin-top: 4%;
+    margin-left: 95%;
+    position: absolute;
+}
+
+div.icones img {
+    width: 100%;
+}
+
+
+/*Estilizando o titúlo do site*/
+
+marquee {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin-left: 433px;
+    display: block;
+    margin-top: 5%;
+    font-size: 28pt;
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+
+#formulario {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+fieldset {
+    width: 100%;
+    padding:2% 0%; 
+    margin: .5% 0%;
+    background-color: rgba(100, 100, 100, .6);
+}
+
+select{
+    margin:2% 5%;
+    padding:.5%;
+    border-radius:5px;
+}
+
+#spanCor{
+    visibility: hidden;
+}
+
+input#btnReuniao{
+    padding: .5%;
+    color:#fff;
+    background-color: #000;
+    border-radius:5px;
+    margin:1% 5%;
+    cursor:pointer;
+    box-shadow: 2px 2px 4px black;
+}
+
+input#btnReuniao:hover{
+    border:solid 2px red;
+}
+
+::placeholder {
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 12px;
+}
+
+placeholder textarea{
+    font-size: 20px;
+}
+
+legend {
+    text-align: center;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+form fieldset input.detalhes {
+    display: inline-block;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 50%;
+    padding: 6px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 4s;
+}
+
+form fieldset input:hover.detalhes {
+    width: 60%;
+    background-color: rgb(0,0,0,.2);
+    color: #000;
+}
+
+/*Estilizando o  fieldset de agradescimento*/
+#msg{
+    text-align: center;
+    color:#000;
+    font-size: 22Px;
+}
+
+span#agradec{
+    display: block;
+    margin:auto;
+    text-decoration: underline;
+    font-size: 19px;
+    color: #609;
+
+}
+
+#sim{
+    color:blue;
+}
+#nao{
+    color:red;
+}
+
+#nomeEpresa{
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+}
+
+fieldset#fieldComIcones img:hover {
+    width: 5.5%;
+    height: auto;
+}
+
+input#dominio {
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .2);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+}
+
+input#dominio:hover {
+    background-color: rgba(0, 0, 0, .4);
+    width: 43%;
+}
+
+label.labelAjuda {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+p#style {
+    width: 45%;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: -49%;
+    color: #222;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+input#nomeEmpresa {
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .2);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+}
+
+input#nomeEmpresa:hover {
+    background-color: rgba(0, 0, 0, .4);
+    width: 43%;
+}
+
+textarea {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 3%;
+    padding-top: 5%;
+    display: block;
+    background-color:rgba(0,0,0,.2);
+    margin: auto;
+    display: block;
+    transition: all 1s;
+    cursor: pointer;
+    color: #fff;
+}
+
+textarea:hover {
+    width: 83%;
+    background-color:rgba(0,0,0,.4);
+}
+
+footer {
+    background-color:rgba(0,0,0,.4);
+    color: white;
+    text-align: center;
+    padding: 0% 2%;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer span {
+    font-size: large;
+}
+
+
+/*Estilizando a area de  redes socias*/
+
+#inputEmail {
+    display: block;
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+    margin: auto;
+}
+
+#inputEmail:hover {
+    background-color: rgba(0, 0, 0, .3);
+    width: 50%;
+    text-align: center;
+}
+
+#notificacao {
+    display: none;
+}
+
+#resultado {
+    padding-top: 3px;
+    padding-bottom: 53px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+    background-color: #fff;
+    width: 78%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+/*Deixando o Menu Responsivo */
+
+@media(max-width: 800px) {
+    label[for=”bt_menu”] {
+        display: block;
+    }
+    body {
+        background-image: url("../_Imagens/background-2.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    /*Estilizando o titúlo do site*/
+    marquee {
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-top: 50%;
+    }
+    /*Estilizando o background para ficar um pouco escuro*/
+    #backgroundTrnsparente {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}

@@ -1,0 +1,485 @@
+/*Resetando os valores de espaçamento */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Estilizando o bady*/
+
+body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #1a1a1b;
+    background-image: url(../_Imagens/mybackground-2.png);
+}
+
+div#backgroung {
+    /*background-image: url("../_Imagens/fundo-3.jpg")*/
+    background-color: aqua;
+    background-repeat: repeat;
+    background-position: 100;
+    background-size: cover;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+
+/*Estilizando a nav da classe menu */
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    font-family: Arial;
+    font-size: .8em;
+}
+
+.menu input {
+    margin-top: 11px;
+    margin-left: 250Px;
+    width: 210px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    transition: 1s;
+}
+
+.menu input:hover {
+    color: #fff;
+    width: 250px;
+}
+
+
+/*Estilizando as listas */
+
+.menu ul {
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+}
+
+.menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul {
+    visibility: visible;
+}
+
+.menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+    transition: 0.5s;
+    font-size: 1.2em;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a {
+    background-color: #069;
+}
+
+
+/*Criando o label */
+
+label[for=”bt_menu”] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+}
+
+#bt_menu {
+    display: none;
+}
+
+label[for=”bt_menu”] {
+    display: none;
+}
+
+div.icones {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(14, 130, 224);
+    border-radius: 50%;
+    text-align: left;
+    float: right;
+    margin-top: 4%;
+    margin-left: 95%;
+    position: absolute;
+}
+
+div.icones img {
+    width: 100%;
+}
+
+
+/*Estilizando o titúlo do site*/
+
+marquee {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    margin-left: 433px;
+    display: block;
+    margin-top: 5%;
+    font-size: 28pt;
+    font-variant: small-caps;
+    font-weight: lighter;
+}
+
+#formulario {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: rgba(100, 100, 100, .6);
+}
+
+fieldset {
+    width: 100%;
+}
+
+::placeholder {
+    color: #fff;
+    font-variant: small-caps;
+}
+
+::placeholder:hover {
+    color: #000;
+}
+
+legend {
+    text-align: center;
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+
+form fieldset input.detalhes {
+    display: inline-block;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 50%;
+    padding: 6px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 4s;
+}
+
+form fieldset input:hover.detalhes {
+    width: 60%;
+    background-color: #fff;
+    color: #000;
+}
+
+label {
+    color: #fff;
+    font-weight: bold;
+    font-size: .1.1em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+    transition: all 1s;
+}
+
+label:hover {
+    color: #000;
+}
+
+.checkbox {
+    display: inline-block;
+    margin-right: 7%;
+    margin-top: 2%;
+}
+
+
+/*Estilizando fieldset interiores*/
+
+fieldset.interior {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2.5%;
+    margin-top: 2%;
+    height: 250px;
+    margin-left: 10px;
+    background-color: #000;
+    transition: all 3s;
+    margin-bottom: 3%;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+fieldset.interior:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+p#p1,
+p#p2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    transition: all 3s;
+    font-size: 1.2em;
+    margin-top: -40%;
+    padding-top: 40%;
+    padding-bottom: 40%;
+}
+
+p#p2:hover,
+p#p1:hover {
+    color: #000;
+}
+
+fieldset#fieldComIcones img {
+    width: 6%;
+    height: auto;
+    padding: 6px;
+    margin: 0% 5%;
+    transition: 1s;
+}
+
+fieldset#fieldComIcones img:hover {
+    width: 5.5%;
+    height: auto;
+}
+
+input#ajuda {
+    width: 45%;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    padding: 6px;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, .9);
+    outline: none;
+    transition: all 2s;
+}
+
+input#ajuda:hover {
+    background-color: rgba(0, 0, 0, .7);
+    width: 43%;
+    border: 5px solid #fff;
+    color: #fff;
+}
+
+label.labelAjuda {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+
+p#style {
+    width: 45%;
+    text-align: justify;
+    margin-bottom: 0px;
+    margin-left: 4%;
+    color: #fff;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input#sugestao {
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+}
+
+input#sugestao:hover {
+    background-color: rgba(0, 0, 0, .4);
+    width: 43%;
+}
+
+select {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    height: 40px;
+}
+
+textarea {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin-bottom: 3%;
+    padding-top: 5%;
+    display: block;
+    background-color: #000;
+    margin: auto;
+    display: block;
+    transition: all 3s;
+    cursor: pointer;
+    color: #fff;
+}
+
+textarea:hover {
+    width: 83%;
+}
+
+hr {
+    color: #000;
+}
+
+legend.interior {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+legend.interior:hover {
+    color: #000;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 0% 2%;
+    width: 88%;
+    margin: auto;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer span {
+    font-size: large;
+}
+
+
+/*Estilizando a area de  redes socias*/
+
+#inputEmail {
+    display: block;
+    width: 45%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, .1);
+    border-bottom: 2px solid black;
+    border-top: rgba(0, 0, 0, .0);
+    border-left: rgba(0, 0, 0, .0);
+    border-right: rgba(0, 0, 0, .0);
+    outline: none;
+    color: #fff;
+    transition: all 2s;
+    margin: auto;
+}
+
+#inputEmail:hover {
+    background-color: rgba(0, 0, 0, .3);
+    width: 50%;
+    text-align: center;
+}
+
+#notificacao {
+    display: none;
+}
+
+#resultado {
+    padding-top: 3px;
+    padding-bottom: 53x;
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+    background-color: #fff;
+    width: 78%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+/*Deixando o Menu Responsivo */
+
+@media(max-width: 800px) {
+    label[for=”bt_menu”] {
+        display: block;
+    }
+    body {
+        background-image: url("../_Imagens/background-2.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    #bt_menu:checked~.menu {
+        margin-left: 0;
+    }
+    .menu {
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    .menu ul li {
+        width: 100%;
+        float: none;
+    }
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all 4s;
+    }
+    .menu ul li:hover ul {
+        height: auto;
+        max-height: 200px;
+    }
+    /*Estilizando o titúlo do site*/
+    marquee {
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        display: block;
+        margin-top: 50%;
+    }
+    /*Estilizando o background para ficar um pouco escuro*/
+    #backgroundTrnsparente {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}

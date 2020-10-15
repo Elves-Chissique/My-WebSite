@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resonsivo</title>
+    <link rel="stylesheet" href="../_Css/serWeb.css">
+</head>
+
+<body id="bdy">
+<!-- ********Começando a div principal titulado background e flotuará ao right******** -->
+    <div id="d">
+        <input type="checkbox" id="bt_menu" />
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../MenuDropDown.html">Home</a></li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_1()"><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="web.html">Serviços Web</a></li>
+                        <li><a href="serRedes.html">Serviços Redes</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_2()"><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="programação.html">Programação</a></li>
+                        <li><a href="curRedes.html">Redes Computadores</a></li>
+                        <li><a href="informBasica.html">Informática Basica</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_3()"><a href="multimida.html">Multmídia</a></li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_4()"><a href="contactos.html">Contato</a></li>
+            </ul>
+
+        </nav>
+     <!-- **********************Aqui o menu do site (nav-bar)**************************-->
+        <div class="icones">
+            <img id="Empresa" src="../_logo/home.png" alt="Logo da Empresa">
+        </div>
+        <div id="firstDiv">
+            <p id = "marq">
+                <Marquee id="mm">
+                    Dê Uma Aparência Profissional à Sua Empresa
+                </Marquee>
+            </p>
+        </div>
+       <!-- *****************Aqui termina a div de Marquee**********************--> 
+     <!-- **************Começa a div que conte as fotos de slides*******************-->
+       <div class="confirm">
+           <div id="resultado-1">
+                <div class="container">
+                    <div class="photoWrapper">
+                        <img class='photo'  src="../_Imagens/slide-1.png" alt="" />
+                    </div>
+                    <div class="photoWrapper">
+                        <img class='photo'  src="../_Imagens/slides-1.png" alt="" />
+                    </div>
+                    <div class="photoWrapper">
+                        <img class='photo'  src="../_Imagens/slides-2.png" alt="" />
+                    </div>
+                    <div class="photoWrapper">
+                        <img class='photo'  src="../_Imagens/slides-4.png" alt="" />
+                    </div>
+					<p class="details">Mais - Detalhes</p>
+                </div>
+            </div>
+            <div id="Info_1" class="resutadoInfo-1">
+                <center>
+                    <span style="font-size:25px; color:yellow;">Sites Responsivos</span> <br/> <br/>
+                    <b style="font-size:16px;">Inicial</b>-<b style="font-size:25px;">9.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>50% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>6 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+                    
+                    <span class = "imagem"><img onclick="vamos()" src="../_imagens/setaDireita.png" id="direita"></span>
+
+                </ul>
+                <hr/>
+                <br/>
+                <center>
+                    <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                </center>
+            </div>
+    <!--****************Aqui terima o primeiro texto de reultado-1*********************-->
+            <div id="Info_2" class="resutadoInfo-1">
+            <br><br><br>
+                <center>
+                    <span style="font-size:25px; color:yellow;">Sites Responsivos</span> <br/> <br/>
+                    <b style="font-size:16px;">Profissional</b>-<b style="font-size:25px;">15.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>75% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>10 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>Integradade com Newlest</li>
+                    <li>Integraçõ Com googleMaps</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+                    <li>2 Meses de Suporte Gratuito</li>
+                    <span  class = "imagem"><img id="esquerda" onclick="vamos_2()" src="../_imagens/setaEsquerda.png"></span>
+
+                <center>
+                    <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                </center>
+                </ul>
+            </div>
+        </div>
+    <!-- *******************Aqui termina a div resutado-1****************************** -->
+        <div class="confirm">
+            <div id="Info_22" class="resutadoInfo-1">
+                <br><br><br>
+                <center>
+                    <span style="font-size:25px; color:yellow;">Smart Bloger</span> <br/> <br/>
+                    <b style="font-size:16px;">Bási</b>-<b style="font-size:25px;">5.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>50% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>6 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+
+                     <center>
+                         <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                     </center>
+                </ul>
+            </div>
+        </div>
+    <!-- **************************Aqui termina a div resutado-2************************ -->
+        <div class="confirm">
+            <div id="Info_33" class="resutadoInfo-1">
+                <br><br><br>
+                <center>
+                    <span style="font-size:22px; color:yellow;">Densevolvimento de Sistemas</span> <br/> <br/>
+                    <b style="font-size:16px;">Bási</b>-<b style="font-size:25px;">5.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>50% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>6 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+
+                     <center>
+                         <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                     </center>
+                </ul>
+            </div>
+        </div>
+    <!-- *****************Aqui termina a div resutado-3******************************** -->
+        <div class="confirm">
+            <div id="Info_44" class="resutadoInfo-1">
+                <br><br><br>
+                <center>
+                    <span style="font-size:20px; color:yellow;">APP - Web/Desktop/ Mobile</span> <br/> <br/>
+                    <b style="font-size:16px;">Bási</b>-<b style="font-size:25px;">5.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>criação rápida de tarefas</li>
+                    <li>Mensagens Intantâneas</li>
+                    <li>Chamade de Voz e videos</li>
+                    <li>Organizar arquivs e agendar reuniões</li>
+                    <li>Video Conferências pra varios usuários</li>
+                    <li>Calendário</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+
+                    <center>
+                        <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                    </center>
+                </ul>
+            </div>
+        </div>
+    <!-- *****************Aqui termina a div resutado-4/5/6******************************** -->
+    <div class="confirm">
+            <div id="Info_55" class="resutadoInfo-1">
+                <br><br><br>
+                <center>
+                    <span style="font-size:22px; color:yellow;">Lojas Online / E-comercial</span> <br/> <br/>
+                    <b style="font-size:16px;">Bási</b>-<b style="font-size:25px;">5.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>50% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>6 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+
+                    <center>
+                        <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                    </center>
+                </ul>
+            </div>
+        </div>
+    <!-- *****************Aqui termina a div resutado-7  ******************************** -->
+    <div class="confirm">
+            <div id="Info_66" class="resutadoInfo-1">
+                <br><br><br>
+                <center>
+                    <span style="font-size:22px; color:yellow;">Personalização de Eamils</span> <br/> <br/>
+                    <b style="font-size:16px;">Bási</b>-<b style="font-size:25px;">5.000-Mt</b>
+                </center>
+                <hr>
+                <ul>
+                    <li>Chate Online</li>
+                    <li>50% Corporativo</li>
+                    <li>Slides incluidos</li>
+                    <li>Mostra de portfólio</li>
+                    <li>Alta personalização</li>
+                    <li>6 Páginas de conteúdo</li>
+                    <li>Formulário de contato</li>
+                    <li>2 meses de suporte técnico</li>
+                    <li>Integação com mídia social</li>
+
+                    <center>
+                        <a href="contactoServWeb.html"><input class="btn" type = "submit" value= "Fazer Aquisão"/></a>
+                    </center>
+                </ul>
+            </div>
+        </div>
+    <!-- *****************Aqui termina a div resutado-7  ******************************** -->
+    <br/>
+    <div id="separar"></div>
+    <div class="a" id="desenv">
+        Desenvolvimento de Sites <br/>
+        <hr/>
+        <span style="font-size:18pt;">Usamos as Melhores Tecnológias da Actualidade</span>
+    </div>
+    <div >
+        <center>
+            <p id="pagp1" class = "pagp">
+             <span style="color:#c0ffff; font-size:16pt;">||Desenvolvimento à medida do seu projecto||</span> <br/><br/>
+             <span id="trocaTexto">
+             Desenvolvemos Sites Reponsivos, com as ultímas tendênçias de web-design, compatíveis com dispositivos moveis e motores de Pesquisa, edição de contéudos simplificada.
+             <br/><br/>
+             Realizamos também manuteção de sites Aplicando as recentes tecnologias e deixando - os
+            modernos
+            </span>
+
+            </p> 
+            <p id="pagp2" class = "pagp">
+              <span style="color:#c0ffff; font-size:16pt;">||Desenvolvimento à médida do seu projecto||</span> <br/><br/>
+              Windows: Para utilização de em ambientes windows, tipicamente para
+            </p>
+        </center>
+    </div>
+    </div> <!-- **************************End of first Div Principal **************************--> 
+    <div class="serv"> <!-- **************beggining of second div Principal***************** -->
+        <div id="serv2">
+        <ul>
+            <li onclick="resul_1()">Criação de Sites</li>
+            <li onclick="resul_2()">Criação de Bloger</li>
+            <li onclick="resul_3()">Criação de Sistemas</li>
+            <li onclick="resul_4()">Criação de App Web</li>
+            <li onclick="resul_4()">Criação de App Mobile</li>
+            <li onclick="resul_4()">Criação de App Desktop</li>
+            <li onclick="resul_5()">Criação de Lojas Online</li>
+            <li onclick="resul_6()">Criação de Email corporativo</li>
+        </ul>
+        </div>
+    </div>
+
+    <!-- Começa o footer-->
+        <div id="footer">
+            <footer id="ft">
+            <img src="../_Logo/whatsapp.png"/>
+            <img src="../_Logo/email.png"/>
+            <img src="../_Logo/facebook.png"/>
+            </footer>
+
+            <span id="coyright">
+                &copy;Copyright_Nerd's-Tecnologies
+            </span> 
+        </div>
+    <!-- **************************Aqui ter a div de footer**********************-->   
+    <!-- Aqu estou Linkando  o JavaScript-->
+    <script src="../_JavaScript/serWeb.js">
+        
+  </script>
+</body>
+
+</html>

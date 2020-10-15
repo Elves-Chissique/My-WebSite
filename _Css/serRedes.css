@@ -1,0 +1,491 @@
+        /*Resetando os valores de espaçamento */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*Estilizando o bady*/
+    
+    body {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-color: #654733;
+        box-sizing: border-box;
+		color:#fff;
+    }
+	
+    /*Estilizando a div principal com id background e flutuará pelo right*/
+    div#background {
+        background-color: aqua;
+        border-right: solid 1px aqua;
+        border-left: solid 1px aqua;
+        background-size: 100%;
+        width: 70%;
+        height: auto;
+		float:right;
+		margin-right:10px;
+    }
+	
+	/*Estilizando a segunda div principal com id serviços e flutuará pelo left*/
+
+	.serv div{
+		background-color:#000555;
+		width:100%;
+    padding: 8% 0%;
+    border-radius: 30px;
+	}
+	.serv{
+		background:rgba(0,0,0,.0);
+		background-size:100%;
+		width:23%;
+		float:left;
+		box-sizing:border-box;
+		margin-left:2%;
+		color:black;
+		padding-top:0%;
+		padding-bottom:0%;
+		text-indent:50px;
+		height:20%;
+    margin-top:10%;
+    border-radius:30px;
+    position: fixed;
+	}
+	
+	div.serv ul li{
+		font-size:18px;
+		margin-top:10px;
+		margin-bottom:10px;
+		background-color:rgba(0,0,0,.4);
+		padding:5px;
+		transform: scale(1);
+    transition: all .1s;
+		cursor:pointer;	border-radius:7px;
+		list-style:none;
+		border:1px solid aqua;
+    color:#fff;
+	}
+	 
+	 
+	div.serv ul li:hover{
+		font-size:18px;
+		margin-top:10px;
+		margin-bottom:10px;
+		background-color:#cecece;
+		padding:5px;
+		color:#000;
+		transform:scale(.9);
+		font-size:20px;
+		background-color:#888;
+	}
+	
+    /*Estilizando a nav da classe menu */
+    .menu {
+        width: 100%;
+        height: 50px;
+        background-color: #222;
+        font-family: Arial;
+        font-size: .8em;
+    }
+    
+    .menu input {
+        margin-top: 11px;
+        margin-left: 250Px;
+        width: 210px;
+        height: 25px;
+        border-radius: 10px;
+        text-align: center;
+        color: #000;
+        transition: 1s;
+    }
+    
+    .menu input:hover {
+        color: #fff;
+        width: 250px;
+    }
+    /*Estilizando as listas */
+    
+    .menu ul {
+        list-style: none;
+        position: relative;
+    }
+    
+    .menu ul li {
+        width: 150px;
+        float: left;
+    }
+    
+    .menu a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+    }
+    
+    .menu ul ul {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    .menu ul li:hover ul {
+        visibility: visible;
+    }
+    
+    .menu a:hover {
+        background-color: #f4f4f4;
+        color: #555;
+        transition: 0.5s;
+        font-size: 1.2em;
+    }
+    
+    .menu ul ul li {
+        float: none;
+        border-bottom: solid 1px #ccc;
+    }
+    
+    .menu ul ul li a {
+        background-color: #069;
+    }
+    /*Criando o label */
+    
+    label[for=”bt_menu”] {
+        padding: 5px;
+        background-color: #222;
+        color: #fff;
+        font-family: Arial;
+        text-align: center;
+        font-size: 30px;
+        cursor: pointer;
+        height: 50px;
+    }
+    
+    #bt_menu {
+        display: none;
+    }
+    
+    label[for=”bt_menu”] {
+        display: none;
+    }
+    /*Estilizando div icones*/
+    
+    div.icones {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        text-align: left;
+        float: right;
+        margin-top: 4%;
+        margin-left: 97%;
+        position: absolute;
+		display:none;
+    }
+    
+    div.icones img {
+        width: 100%;
+    }
+    
+    div.icones img {
+        width: 100%;
+    }
+    /*Estilização de Marquee*/
+    
+    marquee {
+        color: #fff;
+        width: 50%;
+        text-align: center;
+        margin-left: 433px;
+        display: block;
+        margin-top: 2%;
+        font-size: 28pt;
+        font-variant: small-caps;
+        font-weight: lighter;
+    }
+	/*Estilizando div que separa o footer das divs das fotos de slides*/
+	#separar{
+		clear:both;
+		margin-bottom:4.4%;
+	}
+    /*Estilizando footer*/
+    footer {
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        text-align: center;
+        padding: 0% 2%;
+        width: 96%;
+        margin: auto;
+        border-radius: 8px;
+        height: 30px;
+        margin-top: 15px;
+    }
+    
+    footer img {
+        width: 30px;
+        height: auto;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+    
+    span#coyright {
+        font-size: large;
+        display: block;
+        background-color: rgba(0, 0, 0, 1);
+        color: #fff;
+        margin: auto;
+        padding: 5px;
+        border-radius: 8px;
+        text-align: center;
+        width: 99%;
+    }
+    
+    /*Estilizando o meu album de fotos*/
+	div#cursos p{
+		text-align:center;
+		background-color:rgba(0,0,0,.5);
+		padding: 3px;
+		color:#fff;
+		font-variant:small-caps;
+		font-size:18;
+	}
+
+    /*Estilizando Area das fotos dos slides*/
+	img.fotoSlides{
+		width:80%;
+		height:auto;
+		display:block;
+		margin:auto;
+	}
+   
+   /*Estilizando a div resultado-1 e a sua respectiva div de informação (div resutadoInfo-1)*/
+   #resultado-1{
+	   width:76%;
+	   height:auto;
+	   float:left;
+   }
+   .resutadoInfo-1{
+	   width:24%;
+	   height:auto;
+	   float:right;
+	   background-color:#000555;
+	   color:#fff;
+	   padding-left:2.5%;
+	   padding-bottom:3%;
+	   box-sizing:border-box;
+	   border-bottom:10px solid #fff;
+	   border-top:10px solid #fff;
+   }
+   
+   #Info_2{
+	   display:none;
+     background-color:#000500;
+   }
+  
+  
+    div.confirm ul li{    
+		padding:3% 2%;         /*Essa parte é comum*/
+	}
+	div.confirm  ul img {
+		width:25px;            /*Essa parte também é comum*/
+		height:auto;
+		
+	}
+	
+	span.imagem{
+		width:31px;
+		height:auto;
+		float:right;
+		margin-right:10px;
+		margin-top:-200px;
+		border-radius:50%;
+		padding-left:5px;
+		padding-top:2px;
+		transition: .2s;
+    cursor:pointer;
+	}
+	
+	span.imagem:hover{
+		background-color:rgba(200,200,200,.2);
+	}
+
+   /*Estilizando a div resultado-2 e a sua respectiva div de informação (div resutadoInfo-2)*/
+    #resultado-2{
+	   width:76%;
+	   height:auto;
+	   float:left;
+	   display:none;
+   } 
+
+   #Info_22{
+      display:none;
+      background-color:#555fff;
+   }
+   /*Estilizando a div resultado- e a sua respectiva div de informação (div resutadoInfo-3)*/
+    #resultado-3{
+     width:76%;
+     height:auto;
+     float:left;
+     display:none;
+    } 
+
+   #Info_33{
+      display:none;
+      background-color:#555fff;
+    }
+
+  /*Estilizando a div resultado- e a sua respectiva div de informação (div resutadoInfo-3)*/
+    #resultado-4{
+     width:76%;
+     height:auto;
+     float:left;
+     display:none;
+    } 
+
+   #Info_44{
+      display:none;
+      background-color:#dca6ac;
+    }
+ /*Estilizando a div resultado- e a sua respectiva div de informação (div resutadoInfo-3)*/
+     #resultado-5{
+     width:76%;
+     height:auto;
+     float:left;
+     display:none;
+    } 
+
+   #Info_55{
+      display:none;
+      background-color:#b6b8de;
+    }
+  
+/*Estilizando a div resultado- e a sua respectiva div de informação (div resutadoInfo-3)*/
+   #resultado-6{
+     width:76%;
+     height:auto;
+     float:left;
+     display:none;
+    } 
+
+   #Info_66{
+      display:none;
+      background-color:#a2b673;
+    }
+
+    /*Deixando o Menu Responsivo */
+    @media(max-width: 800px) {
+        label[for=”bt_menu”] {
+        display: block;
+		}
+        body {
+            background-image: url("../_Imagens/background-2.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+        }
+        #bt_menu:checked~.menu {
+            margin-left: 0;
+        }
+        .menu {
+            margin-top: 5px;
+            margin-left: -100%;
+            transition: all .4s;
+        }
+        .menu ul li {
+            width: 100%;
+            float: none;
+        }
+        .menu ul ul {
+            position: static;
+            overflow: hidden;
+            max-height: 0;
+            transition: all 4s;
+        }
+        .menu ul li:hover ul {
+            height: auto;
+            max-height: 200px;
+        }
+    /*Estilizando o titúlo do site*/
+		marquee {
+            color: #fff;
+            width: 50%;
+            text-align: center;
+            margin: auto;
+            display: block;
+            margin-top: 50%;
+        }
+    /*Estilizando o background para ficar um pouco escuro*/
+       #backgroundTrnsparente {
+            background-color: rgba(0, 0, 0, .5);
+        }
+    }
+	
+	
+	
+	/*ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+	*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+a {color: #19838d;}
+
+.container {
+  margin:auto;
+  padding:30%;
+  width: 95%;
+  height:100%;
+  overflow: hidden;
+  border: 10px solid #fff;
+  position: relative;
+  display:block;
+  box-shadow: 0 10px 10px #777;
+  background-color:rgba(0,0,0,.5);
+}
+
+.photoWrapper {
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.photo {
+  height:auto;
+  width:100%;
+}
+p.photoDescr {
+  background-color: #8e8e8e;
+  margin: 0;
+  padding: 5px;
+}
+
+@keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.photoWrapper:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.photoWrapper:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.photoWrapper:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.photoWrapper:nth-child(4) {
+  animation-delay: 12s;
+}
+@media (max-width: 728px) {
+  .container {
+    width: 90%;
+    padding-bottom: 50%;
+  }
+}

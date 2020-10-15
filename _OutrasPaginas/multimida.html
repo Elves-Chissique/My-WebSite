@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Resonsivo</title>
+  <link rel="stylesheet" href="../_Css/multimidia.css">
+</head>
+<body>
+    <div id="backgroundTrnsparente">
+        <input type="checkbox" id="bt_menu" />
+        <label for="bt_menu">&#9776;</label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../MenuDropDown.html">Home</a></li>
+                    <li onmouseout="fontoAnterior()" onmouseover="mostrar_1()"><a href="#">Serviços</a>
+                        <ul>
+                            <li><a href="web.html">Serviços Web</a></li>
+                            <li><a href="serRedes.html">Serviços Redes</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseout="fontoAnterior()" onmouseover="mostrar_2()"><a href="#">Cursos</a>
+                        <ul>
+                            <li><a href="programação.html">Programação</a></li>
+                            <li><a href="curRedes.html">Redes Computadores</a></li>
+                            <li><a href="informBasica.html">Informática Basica</a></li>
+                        </ul>
+                    </li>
+                    <li onmouseout="fontoAnterior()" onmouseover="mostrar_3()"><a href="#">Multmídia</a></li>
+                    <li onmouseout="fontoAnterior()" onmouseover="mostrar_4()"><a href="contactos.html">Contato</a></li>
+                </ul>
+
+
+                <input type="search" name="nameSeach" id="idseach" placeholder="Faça Aqui a sua pesquisa">
+        </nav>
+
+        <div id="horas">
+            
+        </div>
+
+        <div class="icones">
+            <img id="Empresa" src="../_logo/home.png" alt="Logo da Empresa">
+        </div>
+       
+
+        <div id="firstDiv">
+            <p>
+                <Marquee>
+                        Dê nova aparência à sua empresa
+                </Marquee>
+            </p>
+    
+        </div>
+        
+        <div id="separar"></div>
+        1
+        <footer>
+        <img src="../_Logo/facebook.png" alt="facebook icone"> &nbsp; &nbsp;<img src="../_Logo/instagram.jpg" alt="instagram icone" />   <span>&copy;Copyright_Nerd's-Tecnologies</span>    <img src="../_Logo/email.png" alt="email icone">
+        </footer>
+    </div>
+
+
+    <!--Linkando  o JavaScript-->
+
+    <script src="_JavaScript/js.js">
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resonsivo</title>
+    <link rel="stylesheet" href="../_Css/contacto.css">
+</head>
+
+<body>
+    <div id="backgroung">
+        <input type="checkbox" id="bt_menu" />
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_0()"><a href="../MenuDropDown.html">Home</a></li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_1()"><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="web.html">Serviços Web</a></li>
+                        <li><a href="serRedes.html">Serviços Redes</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_2()"><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="programação.html">Programação</a></li>
+                        <li><a href="curRedes.html">Redes Computadores</a></li>
+                        <li><a href="informBasica.html">Informática Basica</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_3()"><a href="multimida.html">Multmídia</a></li>
+                <li onmouseout="fotoAnterior()" onmouseover="mostrar_4()"><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div id="horas">
+
+        </div>
+
+        <div class="icones">
+            <img id="Empresa" src="../_logo/phone.png" alt="Logo da Empresa">
+        </div>
+
+
+        <div id="firstDiv">
+            <p>
+                <Marquee>
+                    Dê nova aparência à sua empresa
+                </Marquee>
+            </p>
+
+        </div>
+
+        <form id="formulario" action="">
+            <fieldset>
+                <legend>Informação Pessoal</legend>
+                <center>
+                    <input class="detalhes" type="text" name="nameNome" id="idNome" placeholder="Nome Completo">
+                    <input class="detalhes" type="email" name="nameEmail" id="idEmail" placeholder="Seu Email">
+                    <input class="detalhes" type="tel" name="nameNumero" id="idNumero" placeholder="Contacto">
+                </center>
+            </fieldset>
+
+            <fieldset>
+                <legend>Especifique o Serviço</legend>
+                <center>
+                    <label>
+                        Solcitar_Serviços<input onclick="abrir()" type="checkbox"  class="checkbox" name="" id="a">
+                        
+                    </label>
+                    <label>
+                        Registar-se_curso 
+                        <input  onclick="abrir2()" class="checkbox" type="checkbox" name="" id="checkbox2">
+                    </label>
+                </center>
+
+
+                <hr>
+                <center>
+                    <fieldset id="interior1" class="interior">
+                        <legend class="interior">Selecione_Serviço</legend>
+                        <br> <br> <br> <br>
+                        <select name="nameSelec" id="idSelct1">
+                            <option value="Html5">Selecine Aqui o serviço</option>
+                            <option value="Html5">Criação de blog</option>
+                            <option value="Css">Criação de Site</option>
+                            <option value="JavaSript">crir Emil Coorporativo</option>
+                            <option value="PhP">Criação de App Web</option>
+                            <option value="PhP">Criação de App Dekstop</option>
+
+                        </select>
+
+                        <p id="p1">Marque o checkbox para Selecionar Serviços Em Questão</p>
+                    </fieldset>
+                    <fieldset id="interior2" class="interior">
+                        <legend class="interior">Selecione_Curso</legend>
+                        <br> <br> <br> <br>
+                        <select name="nameSelec" id="idSelct2">
+                            <option value="Html5">Selcione Aqui o Curso</option>
+                            <option value="Html5">Html</option>
+                            <option value="Css">Css</option>
+                            <option value="JavaSript">JavaScript</option>
+                            <option value="PhP">PhP-Introdutório</option>
+
+                        </select>
+                        <p id="p2">Marque o checkbox Selecionar o Curso Em Questão</p>
+                    </fieldset>
+                </center>
+
+            </fieldset>
+            <fieldset>
+                <p id="style"><br><br> <br> <br>Escreva Abaixo o Que Você Precisa. <br> E Ajudaremos a Encotrar a Solução</p>
+                <input id="ajuda" type="text">
+                <input id="sugestao" type="text" name="txt" id="txtId" placeholder="Deixe Aqui Uma">
+            </fieldset>
+
+            <fieldset>
+                <legend>Comunicar um Problema</legend>
+                <legend class="interior">Descrava_o_Probleam</legend>
+                <textarea placeholder="Descreva Aqui Seu Problema" name="nmetext" id="idText" rows="7"></textarea>
+                <br>
+
+            </fieldset>
+
+            <fieldset id="notificacao">
+                <legend>Area de Notificação</legend>
+                <p id="resultado"></p> <b></b>
+                <p id="espacoEmail"> <input placeholder="Escreva Aqui o Enderço" type="text" id="inputEmail" name="email"> </p>
+
+            </fieldset>
+
+            <fieldset id="fieldComIcones">
+                <legend>Notificação</legend>
+                <br>
+                <p style="text-align: center;">Deseja recebr nossas novidades?
+                    <label for="masc">Sim</label>
+                    <input type="radio" id="masc" name="nameRadio"> &nbsp;
+                    <label for="fimen">Não</label>
+                    <input type="radio" id="fimen" name="nameRadio"><br> Se Sim! Escolha a plataforma naquale gostaria de receber as novidades
+                </p>
+                <center>
+                    <img onclick="facebook1()" src="../_Logo/email.png" alt="Icone de Email">
+                    <img onclick="facebook()" src="../_Logo/facebook.png" alt="Icone de facebook">
+                    <img onclick="instagram()" src="../_Logo/instagram.png" alt="Icone de instagram">
+                    <img onclick="instagram()" src="../_Logo/whatsapp.png" alt="Icone de Whatsapp">
+
+                </center>
+                <br>
+            </fieldset>
+        </form>
+
+    </div>
+
+
+    <!--Linkando  o JavaScript-->
+
+    <script src="../_JavaScript/serWeb.js">
+    </script>
+
+</body>
+
+</html>

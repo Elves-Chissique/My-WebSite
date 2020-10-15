@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Resonsivo</title>
+    <link rel="stylesheet" href="../_Css/programação.css">
+</head>
+
+<body>
+    <div id="background">
+        <input type="checkbox" id="bt_menu" />
+        <label for="bt_menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="../MenuDropDown.html">Home</a></li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_1()"><a href="#">Serviços</a>
+                    <ul>
+                        <li><a href="web.html">Serviços Web</a></li>
+                        <li><a href="serRedes.html">Serviços Redes</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_2()"><a href="#">Cursos</a>
+                    <ul>
+                        <li><a href="programação.html">Programação</a></li>
+                        <li><a href="curRedes.html">Redes Computadores</a></li>
+                        <li><a href="informBasica.html">Informática Basica</a></li>
+                    </ul>
+                </li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_3()"><a href="multimida.html">Multmídia</a></li>
+                <li onmouseout="fontoAnterior()" onmouseover="mostrar_4()"><a href="contactos.html">Contato</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="icones">
+            <img id="Empresa" src="../_logo/home.png" alt="Logo da Empresa">
+        </div>
+
+
+        <div id="firstDiv">
+            <p>
+                <Marquee>
+                    Invista na Sua Capacitação pra O Mercado de Emprego
+                </Marquee>
+            </p>
+        </div>
+
+        <div id="resultado">
+            <div id="fixed">
+                <p onclick="ocultarTudo()" id="x"><img onmouseleave="voltarIcone()" onmousemove="trocarIcone()" id="apagar" src="../_Imagens/apagar.png"/></p>
+                <div id="div22">
+                    <div id="div1">
+                        <img id="textoImagens" src="../_Imagens/text-css3.png" alt="">
+                    </div>
+                    <div id="div2">
+                        <center>
+                            <img id="center" src="../_Imagens/js.png" alt="">
+                        </center>
+                    </div>
+
+
+                </div>
+                <input id="comprar" value="Registr-se" type="submit">
+            </div>
+
+            <p id="separador"></p>
+            <div id="cursos"> <p>Cursos de Programação básico ao Avançado</p>
+            <span id="inf">Escolhe o cusro da sua preferência e click sobre o mesmo para mais detalhes</span>
+                <ul id="album">
+                    <li onclick="css3()" id="foto-1"><span>Administração de Redes</span></li>
+                    <li onclick="js()" id="foto-2"><span>Administração de Servidores</span></li>
+                    <li onclick="point()" id="foto-3"><span>Montagem e Reparação de Computadores</span></li>
+                    <li onclick="css3()" id="foto-4"><span>Segurança Cibernética</span></li>
+                    <li onclick="css3()" id="foto-5"><span>Curso de Design Gráfico</span></li>
+                </ul>
+                
+                <p>Cursos em Progresso >>> Brevemente</p>
+                <ul id="album">
+                    <li onclick="css3()" id="foto-00"><span>Informática Geral Avançad_w10</span></li>
+                    <li onclick="css3()" id="foto-01"><span>Informática Geral Avançada_w7</span></li>
+                    <li onclick="css3()" id="foto-6"><span>MS.Criação de Projectos</span></li>
+                    <li onclick="js()" id="foto-7"><span>Curso Avançado de Excel</span></li>
+                    <li onclick="point()" id="foto-8"><span>Curso Avançado de Power-Point </span></li>
+                    <li onclick="css3()" id="foto-9"><span>Curso Avançado de Ubuntu</span></li>
+                    <li onclick="css3()" id="foto-10"><span>Curso de Gereciamento de Email</span></li>
+                    <li onclick="css3()" id="foto-11"><span>Curso Avançado de Word</span></li>
+                    <li onclick="css3()" id="foto-12"><span>Curso de Gereciamento de Email</span></li>
+                    <li onclick="css3()" id="foto-13"><span>Curso Avançado de Word</span></li>
+                </ul>
+            </div>
+
+            <div id="separar"></div>
+            <footer>
+                <a href="http://www.facebook.com/e_chissique" target="_blank"><img src="../_Logo/facebook.png" alt="facebook icone"></a>
+                &nbsp; &nbsp;<img src="../_Logo/instagram.png" alt="instagram icone" />
+                <a href="mailto:elveschissique@gmail.com"><img src="../_Logo/email.png" alt="email icone"></a>
+                <img src="../_Logo/whatsapp.png" alt="Watsapp icone">
+            </footer>
+
+            <span id="coyright">
+                &copy;Copyright_Nerd's-Tecnologies
+            </span>
+            <br>
+        </div>
+        <!-- Aqu estou Linkando  o JavaScript-->
+        <script src="../_JavaScript/programação.js">
+        </script>
+</body>
+</html>
